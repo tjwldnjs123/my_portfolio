@@ -8,9 +8,45 @@
   font-family: "Nanum Pen Script", cursive;
 }
 
+.intro_more_font {
+  font-family: "Prompt", sans-serif;
+}
+
 .flexRowCenter {
   @apply flex flex-row justify-center items-center;
 }
 .flexColCenter {
   @apply flex flex-col justify-center items-center;
+}
+
+.fade-in {
+  /* opacity: 1; */
+  animation-duration: 2s;
+  animation-duration: leaner;
+  animation-iteration-count: 3;
+  animation-direction: alternate;
+  animation-fill-mode: forwards;
+  animation: fadeIn ease-in-out 1s;
+}
+
+@keyframes fadeIn {
+  0% {
+    transform: translate3d(-100%, 0, 0);
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+.smileImg {
+  background: url("/public/assets/smile.jpeg") no-repeat center;
+  background-size: cover;
+  opacity: 0.6;
+}
+
+.myImg {
+  background: url("/public/assets/나.jpeg") no-repeat center;
+  background-size: cover;
+  opacity: 0.6;
 }
