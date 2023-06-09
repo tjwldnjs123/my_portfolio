@@ -46,7 +46,7 @@ function Intro() {
         id="main_slideY"
         className="snap-y snap-mandatory h-screen overflow-scroll bg-yellow-200 w-full mr-4 animate-intro"
       >
-        <div className="snap-start bg-fixed  flexRowCenter  h-[100vh]">
+        <div className="snap-always snap-start bg-fixed  flexRowCenter  h-[100vh]">
           <h1 className="intro_font text-8xl">Hello</h1>
           {scroll && (
             <div className="flexColCenter fixed bottom-0 mb-10  animate-bounce">

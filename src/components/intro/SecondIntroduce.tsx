@@ -1,13 +1,15 @@
 import { Icon } from "@iconify/react";
 import React from "react";
+import { useNavigate } from "react-router-dom";
 
 type Props = {
   secondFadeIn: boolean;
 };
 
 function SecondIntroduce({ secondFadeIn }: Props) {
+  const navigate = useNavigate();
   return (
-    <div className="snap-center h-[100vh] flexRowCenter">
+    <div className="snap-always snap-center h-[100vh] flexRowCenter">
       {secondFadeIn && (
         <>
           <img
@@ -26,7 +28,10 @@ function SecondIntroduce({ secondFadeIn }: Props) {
               want to
               <br /> see more?
             </p>
-            <div className="absolute bottom-[-100px] right-[-20px] cursor-pointer animate-bounce">
+            <div
+              className="absolute bottom-[-100px] right-[-20px] cursor-pointer animate-bounce"
+              onClick={() => navigate("/main")}
+            >
               <Icon
                 fontSize={40}
                 icon="icon-park-outline:winking-face-with-open-eyes"

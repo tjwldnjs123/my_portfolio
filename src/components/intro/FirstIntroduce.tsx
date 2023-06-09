@@ -5,7 +5,7 @@ type Props = {
 };
 function FirstIntroduce({ fadeIn }: Props) {
   return (
-    <div className="snap-center h-[100vh] flexRowCenter smileImg">
+    <div className="snap-always snap-center h-[100vh] flexRowCenter smileImg">
       <div className=" w-[100%]">
         <div className={`${fadeIn && "fade-in"} text-2xl flexColCenter `}>
           <span>

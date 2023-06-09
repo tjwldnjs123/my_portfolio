@@ -9,7 +9,12 @@
 }
 
 .intro_more_font {
-  font-family: "Prompt", sans-serif;
+  /* font-family: "Noto Serif KR", serif; */
+  font-family: "Playfair", serif;
+}
+
+.project_font {
+  font-family: "Nanum Gothic", sans-serif;
 }
 
 .flexRowCenter {
@@ -42,7 +47,7 @@
 .smileImg {
   background: url("/public/assets/smile.jpeg") no-repeat center;
   background-size: cover;
-  opacity: 0.6;
+  opacity: 0.9;
 }
 
 .myImg {
