@@ -1,4 +1,4 @@
-import React, { useRef, useState } from "react";
+import React, { useEffect, useRef, useState } from "react";
 import Scroll from "../../components/layout/Scroll";
 import {
   Navigation,
@@ -14,14 +14,49 @@ import "swiper/css/navigation";
 import "swiper/css/pagination";
 import "swiper/css/scrollbar";
 import { Icon } from "@iconify/react";
+import DetailProject from "../../components/project/DetailProject";
+import projectData from "../../data/data.json";
 
 function Project() {
   const swiperRef = useRef<any>();
+  const [scroll, setScroll] = useState(true);
   const [init, setInit] = useState(true);
   const [prevDisabled, setPrevDisabled] = useState(false);
   const [nextDisabled, setNextDisabled] = useState(false);
+  const [detailProject, setDetailProject] = useState<{
+    name: string;
+    img: string;
+    personnal: string;
+    period: string;
+    partsOfMe: string[];
+  }>({ name: "", img: "", personnal: "", period: "", partsOfMe: [] });
+  const [open, setOpen] = useState(false);
 
-  console.log(nextDisabled);
+  const onClose = () => {
+    setOpen(false);
+  };
+
+  useEffect(() => {
+    window.onbeforeunload = function pushRefresh() {
+      window.scrollTo(0, 0);
+    };
+  }, []);
+
+  useEffect(() => {
+    window.addEventListener("scroll", handleScroll);
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, [scroll]);
+
+  const handleScroll = () => {
+    console.log(window.scrollY);
+    if (window.scrollY > 200) {
+      setScroll(false);
+    } else {
+      setScroll(true);
+    }
+  };
 
   return (
     <div className="flexColCenter relative animate-intro">
@@ -33,9 +68,9 @@ function Project() {
           </p>
           <p></p>
         </div>
-        <Scroll />
+        {scroll && <Scroll />}
       </div>
-      <div className="flex flex-row justify-end w-[90%] mb-2">
+      <div className="flex flex-row justify-end w-[90%] mb-2 z-10">
         <button
           onClick={() => {
             swiperRef.current?.slidePrev();
@@ -64,7 +99,7 @@ function Project() {
         </button>
       </div>
       <Swiper
-        className="mySwiper relative w-[90%] "
+        className="mySwiper relative w-[90%] mb-10"
         slidesPerView={3}
         spaceBetween={30}
         onBeforeInit={(swiper) => (swiperRef.current = swiper)}
@@ -79,20 +114,26 @@ function Project() {
         //   },
         // }}
       >
-        <SwiperSlide>
-          <img src={process.env.PUBLIC_URL + "/assets/bodit1.png"} />
-        </SwiperSlide>
-        <SwiperSlide>
-          <img src={process.env.PUBLIC_URL + "/assets/bodit1.png"} />
-        </SwiperSlide>
-        <SwiperSlide>
-          <img src={process.env.PUBLIC_URL + "/assets/bodit1.png"} />
-        </SwiperSlide>
-        <SwiperSlide>
-          <img src={process.env.PUBLIC_URL + "/assets/bodit1.png"} />
-        </SwiperSlide>
+        {projectData.projects.map((data) => {
+          return (
+            <SwiperSlide
+              key={data.name}
+              className="cursor-pointer h-[300px]"
+              onClick={() => {
+                setDetailProject(data);
+                setOpen(true);
+              }}
+            >
+              <img
+                className="h-[200px] bg-cover w-full"
+                src={process.env.PUBLIC_URL + data.img}
+              />
+            </SwiperSlide>
+          );
+        })}
       </Swiper>
-      {/* <div className="projectImg mb-0 z-10 w-[30%] h-[500px] rounded-full"></div> */}
+
+      <DetailProject open={open} onClose={onClose} project={detailProject} />
     </div>
   );
 }

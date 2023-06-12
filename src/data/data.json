@@ -1,0 +1,63 @@
+{
+  "projects": [
+    {
+      "name": "Bodit",
+      "img": "/assets/bodit1.png",
+      "personnal": "프론트엔드 5명",
+      "period": "22.10.07 ~ 22.10.09",
+      "partsOfMe": [
+        "달력 모달 구현",
+        "query string으로 날짜 상태 값 전달",
+        "그래프, 달력 반응형 구현"
+      ]
+    },
+    {
+      "name": "playkeyboard",
+      "img": "/assets/playkeyboard.png",
+      "personnal": "프론트엔드 5명",
+      "period": "22.10.04 ~ 22.10.06",
+      "partsOfMe": [
+        "fetch 적용해 데이터를 받아 카테고리 구현",
+        "카테고리 클릭 시 해당 카테고리 활성화",
+        "카드 클릭 시 navigate 적용하여 detail페이지로 이동",
+        "반응형 구현(iphone~tablet)"
+      ]
+    },
+    {
+      "name": "저기어때",
+      "img": "/assets/저기어때.png",
+      "personnal": "프론트엔드 4명, 백엔드 2명",
+      "period": "22.09.19 ~ 2022.09.30",
+      "partsOfMe": [
+        "회원가입 구현",
+        "로그인 구현 (+ 카카오로그인 구현)",
+        "약관동의 페이지 레이아웃 및 체크박스 구현",
+        "핸드폰 인증번호 통신",
+        "마이페이지 레이아웃 및 닉네임,예약자 이름,휴대폰번호 변경 구현"
+      ]
+    },
+    {
+      "name": "ale6ix",
+      "img": "/assets/ale6ix.png",
+      "personnal": "프론트 4명, 백엔드 2명",
+      "period": "22/8/29 ~ 22/9/8",
+      "partsOfMe": [
+        "메인페이지 레이아웃",
+        "제품 상세페이지 구매하기 통신",
+        "장바구니 레이아웃 및 통신 (전체삭제, 체크 된 상품 삭제, 개별삭제, 수량변경)",
+        "검색 페이지 레이아웃 및 통신"
+      ]
+    },
+    {
+      "name": "justgram",
+      "img": "/assets/justgram.png",
+      "personnal": "프론트 1명",
+      "period": "22.09.14",
+      "partsOfMe": [
+        "로그인페이지 유효성 검사 완료 후 버튼 활성화",
+        "메인페이지 목데이터 활용하여 피드 구현",
+        "사용자가 댓글 입력 후 enter 를 누르거나 왼쪽의 버튼 클릭 시 댓글 추가"
+      ]
+    }
+  ]
+}

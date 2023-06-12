@@ -55,13 +55,6 @@
   background-size: cover;
 }
 
-/* .swiper-wrapper {
-  position: relative;
-}
-
-.swiper-button-next {
-  border: 1px solid red;
-  margin-left: 10px;
-  position: absolute;
-  right: 0;
+/* .swiper-slide {
+  height: 300px;
 } */
