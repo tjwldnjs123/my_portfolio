@@ -2,6 +2,7 @@ import React, { useEffect, useRef, useState } from "react";
 import { Icon } from "@iconify/react";
 import FirstIntroduce from "../../components/intro/FirstIntroduce";
 import SecondIntroduce from "../../components/intro/SecondIntroduce";
+import Scroll from "../../components/layout/Scroll";
 
 function Intro() {
   const [scroll, setScroll] = useState(true);
@@ -48,12 +49,7 @@ function Intro() {
       >
         <div className="snap-always snap-start bg-fixed  flexRowCenter  h-[100vh]">
           <h1 className="intro_font text-8xl">Hello</h1>
-          {scroll && (
-            <div className="flexColCenter fixed bottom-0 mb-10  animate-bounce">
-              <Icon fontSize={20} icon="bi:mouse" />
-              <p className="scroll_font ">scroll</p>
-            </div>
-          )}
+          {scroll && <Scroll />}
         </div>
         <FirstIntroduce fadeIn={fadeIn} />
         <SecondIntroduce secondFadeIn={secondFadeIn} />

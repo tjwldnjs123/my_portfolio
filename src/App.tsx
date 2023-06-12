@@ -3,7 +3,7 @@ import "./App.css";
 import { useState, useEffect } from "react";
 import Intro from "./pages/intro/Intro";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
-import Project from "./components/project/Project";
+import Project from "./pages/project/Project";
 
 function App() {
   return (

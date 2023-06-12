@@ -50,8 +50,18 @@
   opacity: 0.9;
 }
 
-.myImg {
-  background: url("/public/assets/나.jpeg") no-repeat center;
+.projectImg {
+  background: url("/public/assets/등산.jpeg") no-repeat center;
   background-size: cover;
-  opacity: 0.6;
 }
+
+/* .swiper-wrapper {
+  position: relative;
+}
+
+.swiper-button-next {
+  border: 1px solid red;
+  margin-left: 10px;
+  position: absolute;
+  right: 0;
+} */
