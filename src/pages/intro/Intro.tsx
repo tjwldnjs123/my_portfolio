@@ -11,7 +11,7 @@ function Intro() {
 
   function onScroll(e: any) {
     let screenY = e.currentTarget.scrollTop;
-    console.log(screenY);
+
     if (screenY > 700) {
       setFadeIn(true);
     } else {

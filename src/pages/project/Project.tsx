@@ -13,6 +13,8 @@ import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
 import "swiper/css/scrollbar";
+import "swiper/css/autoplay";
+
 import { Icon } from "@iconify/react";
 import DetailProject from "../../components/project/DetailProject";
 import projectData from "../../data/data.json";
@@ -58,7 +60,6 @@ function Project() {
   }, [scroll]);
 
   const handleScroll = () => {
-    console.log(window.scrollY);
     if (window.scrollY > 200) {
       setScroll(false);
     } else {
@@ -112,8 +113,8 @@ function Project() {
         spaceBetween={30}
         onBeforeInit={(swiper) => (swiperRef.current = swiper)}
         onSlideChange={() => setInit(false)}
-        onReachBeginning={(e) => setPrevDisabled(true)}
-        onReachEnd={(e) => setNextDisabled(true)}
+        onReachBeginning={() => setPrevDisabled(true)}
+        onReachEnd={() => setNextDisabled(true)}
         modules={[Navigation]}
 
         // breakpoints={{
@@ -140,7 +141,14 @@ function Project() {
           );
         })}
       </Swiper>
-
+      <button
+        className="h-20 hover:underline"
+        onClick={() =>
+          window.open("https://tjwldnjs123.github.io/portfolio", "_blank")
+        }
+      >
+        시연영상이 궁금하다면? click me :)
+      </button>
       <DetailProject open={open} onClose={onClose} project={detailProject} />
     </div>
   );

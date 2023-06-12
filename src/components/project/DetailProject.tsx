@@ -74,7 +74,7 @@ function DetailProject({ open, onClose, project }: Props) {
           </Box>
           <Box
             onClick={() => window.open(project.githubUrl, "_blank")}
-            className="flex flex-row justify-center cursor-pointer mt-10"
+            className="flex flex-row justify-center cursor-pointer mt-10 hover:text-gray-500"
           >
             <Icon icon="mdi:github" fontSize={30} />
             <Typography>깃허브</Typography>
