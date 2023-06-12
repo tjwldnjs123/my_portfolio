@@ -13,6 +13,7 @@ import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
 import "swiper/css/scrollbar";
+import { Icon } from "@iconify/react";
 
 function Project() {
   const swiperRef = useRef<any>();
@@ -34,31 +35,41 @@ function Project() {
         </div>
         <Scroll />
       </div>
-      <button
-        onClick={() => {
-          swiperRef.current?.slidePrev(); // swiper의 slidePrev 실행
-          setNextDisabled(false); // 슬라이드 변경 시 비활성화 상태 해제
-        }}
-        disabled={init || prevDisabled}
-      >
-        Prev
-      </button>
-      <button
-        onClick={() => {
-          swiperRef.current?.slideNext(); // swiper의 slideNext 실행
-          setPrevDisabled(false); // 슬라이드 변경 시 비활성화 상태 해제
-        }}
-        disabled={nextDisabled}
-      >
-        Next
-      </button>
+      <div className="flex flex-row justify-end w-[90%] mb-2">
+        <button
+          onClick={() => {
+            swiperRef.current?.slidePrev();
+            setNextDisabled(false);
+          }}
+          disabled={init || prevDisabled}
+        >
+          <Icon
+            fontSize={25}
+            color={init || prevDisabled ? "gray" : "black"}
+            icon="ooui:previous-ltr"
+          />
+        </button>
+        <button
+          onClick={() => {
+            swiperRef.current?.slideNext();
+            setPrevDisabled(false);
+          }}
+          disabled={nextDisabled}
+        >
+          <Icon
+            fontSize={25}
+            color={nextDisabled ? "gray" : "black"}
+            icon="ooui:previous-rtl"
+          />
+        </button>
+      </div>
       <Swiper
-        className="mySwiper w-[90%] "
+        className="mySwiper relative w-[90%] "
         slidesPerView={3}
         spaceBetween={30}
         onBeforeInit={(swiper) => (swiperRef.current = swiper)}
-        onSlideChange={() => setInit(false)} // 슬라이드 변경 시 실행
-        onReachBeginning={(e) => setPrevDisabled(true)} // slide가 처음에 닿으면 실행
+        onSlideChange={() => setInit(false)}
+        onReachBeginning={(e) => setPrevDisabled(true)}
         onReachEnd={(e) => setNextDisabled(true)}
         modules={[Navigation]}
 
