@@ -5,6 +5,7 @@ import Typography from "@mui/material/Typography";
 import Modal from "@mui/material/Modal";
 import { DialogContent, DialogTitle } from "@mui/material";
 import { Icon } from "@iconify/react";
+import { Link } from "react-router-dom";
 
 const style = {
   position: "absolute" as "absolute",
@@ -26,6 +27,7 @@ type Props = {
     img: string;
     personnal: string;
     period: string;
+    githubUrl: string;
     partsOfMe: string[];
   };
 };
@@ -38,6 +40,12 @@ function DetailProject({ open, onClose, project }: Props) {
       onClose={onClose}
     >
       <Box sx={style}>
+        <Icon
+          className="cursor-pointer"
+          icon="ion:arrow-back"
+          fontSize={20}
+          onClick={() => onClose()}
+        />
         <DialogTitle className="scroll_font" variant="h4">
           {project.name}
         </DialogTitle>
@@ -63,6 +71,13 @@ function DetailProject({ open, onClose, project }: Props) {
                 </Box>
               );
             })}
+          </Box>
+          <Box
+            onClick={() => window.open(project.githubUrl, "_blank")}
+            className="flex flex-row justify-center cursor-pointer mt-10"
+          >
+            <Icon icon="mdi:github" fontSize={30} />
+            <Typography>깃허브</Typography>
           </Box>
         </Box>
       </Box>

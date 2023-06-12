@@ -5,6 +5,7 @@
       "img": "/assets/bodit1.png",
       "personnal": "프론트엔드 5명",
       "period": "22.10.07 ~ 22.10.09",
+      "githubUrl": "https://github.com/tjwldnjs123/bodit-team2",
       "partsOfMe": [
         "달력 모달 구현",
         "query string으로 날짜 상태 값 전달",
@@ -16,6 +17,7 @@
       "img": "/assets/playkeyboard.png",
       "personnal": "프론트엔드 5명",
       "period": "22.10.04 ~ 22.10.06",
+      "githubUrl": "https://github.com/tjwldnjs123/playkeyboard-2team",
       "partsOfMe": [
         "fetch 적용해 데이터를 받아 카테고리 구현",
         "카테고리 클릭 시 해당 카테고리 활성화",
@@ -28,6 +30,7 @@
       "img": "/assets/저기어때.png",
       "personnal": "프론트엔드 4명, 백엔드 2명",
       "period": "22.09.19 ~ 2022.09.30",
+      "githubUrl": "https://github.com/tjwldnjs123/JGUD-2nd-front",
       "partsOfMe": [
         "회원가입 구현",
         "로그인 구현 (+ 카카오로그인 구현)",
@@ -41,6 +44,7 @@
       "img": "/assets/ale6ix.png",
       "personnal": "프론트 4명, 백엔드 2명",
       "period": "22/8/29 ~ 22/9/8",
+      "githubUrl": "https://github.com/tjwldnjs123/ale6ix-1nd-front",
       "partsOfMe": [
         "메인페이지 레이아웃",
         "제품 상세페이지 구매하기 통신",
@@ -53,6 +57,7 @@
       "img": "/assets/justgram.png",
       "personnal": "프론트 1명",
       "period": "22.09.14",
+      "githubUrl": "https://github.com/tjwldnjs123/justgram-react",
       "partsOfMe": [
         "로그인페이지 유효성 검사 완료 후 버튼 활성화",
         "메인페이지 목데이터 활용하여 피드 구현",

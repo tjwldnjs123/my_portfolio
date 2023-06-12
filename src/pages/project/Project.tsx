@@ -28,8 +28,16 @@ function Project() {
     img: string;
     personnal: string;
     period: string;
+    githubUrl: string;
     partsOfMe: string[];
-  }>({ name: "", img: "", personnal: "", period: "", partsOfMe: [] });
+  }>({
+    name: "",
+    img: "",
+    personnal: "",
+    period: "",
+    githubUrl: "",
+    partsOfMe: [],
+  });
   const [open, setOpen] = useState(false);
 
   const onClose = () => {
@@ -125,7 +133,7 @@ function Project() {
               }}
             >
               <img
-                className="h-[200px] bg-cover w-full"
+                className="h-[300px] bg-cover w-full"
                 src={process.env.PUBLIC_URL + data.img}
               />
             </SwiperSlide>
