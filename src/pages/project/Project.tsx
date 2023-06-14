@@ -74,8 +74,8 @@ function Project() {
       id="main_slideY"
       className="animate-intro h-screen overflow-scroll scrollbar-hide "
     >
-      <div className="flex flex-col items-center  h-[100vh]  ">
-        <div className="flexColCenter project_font sticky top-0 w-full bg-yellow-200 h-[70%]">
+      <div className="flex flex-col items-center  h-[100vh] sticky top-0 ">
+        <div className="flexColCenter project_font w-full   bg-yellow-200 h-[70%]">
           <div className=" text-6xl">WORK & PROJECT</div>
           <p className="mt-3 ">
             안녕하세요 프론트엔드 개발자로 첫걸음 디딘 서지원 입니다 :)
