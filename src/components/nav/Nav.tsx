@@ -11,22 +11,22 @@ function Nav() {
       {currentUrl.pathname.includes("main") && (
         <Icon
           onClick={() => navigate("/")}
-          className=" hover:text-gray-500 cursor-pointer"
+          className="sm:w-7 sm:h-7 w-20 h-20 hover:text-gray-500 cursor-pointer"
           icon="carbon:home"
-          fontSize={30}
+          //   fontSize={30}
         />
       )}
       <Icon
         onClick={() => window.open("https://github.com/tjwldnjs123", "_blank")}
-        className=" hover:text-gray-500 cursor-pointer"
+        className="sm:w-7 sm:h-7 w-20 h-20 hover:text-gray-500 cursor-pointer"
         icon="mdi:github"
-        fontSize={30}
+        // fontSize={30}
       />
       <Icon
         onClick={() => window.open("https://velog.io/@tjwldnjs4457", "_blank")}
-        className=" hover:text-gray-500 cursor-pointer"
+        className="sm:w-7 sm:h-7 w-20 h-20 hover:text-gray-500 cursor-pointer"
         icon="uil:blogger"
-        fontSize={30}
+        // fontSize={30}
       />
     </div>
   );

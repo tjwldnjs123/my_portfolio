@@ -7,7 +7,9 @@ function FirstIntroduce({ fadeIn }: Props) {
   return (
     <div className="snap-always snap-center h-[100vh] flexRowCenter smileImg">
       <div className=" w-[100%]">
-        <div className={`${fadeIn && "fade-in"} text-2xl flexColCenter `}>
+        <div
+          className={`${fadeIn && "fade-in"} text-xl flexColCenter sm:text-2xl`}
+        >
           <span>
             <strong>배움에</strong> 즐거움을 느끼고
           </span>

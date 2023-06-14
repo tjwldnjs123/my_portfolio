@@ -61,8 +61,8 @@ function Project() {
 
   const onScroll = (e: any) => {
     let screenY = e.currentTarget.scrollTop;
-
-    if (screenY > 300) {
+    console.log(screenY);
+    if (screenY > 150) {
       setScroll(false);
     } else {
       setScroll(true);
@@ -76,8 +76,8 @@ function Project() {
     >
       <div className="flex flex-col items-center  h-[100vh] sticky top-0 ">
         <div className="flexColCenter project_font w-full   bg-yellow-200 h-[70%]">
-          <div className=" text-6xl">WORK & PROJECT</div>
-          <p className="mt-3 ">
+          <div className="text-4xl sm:text-6xl">WORK & PROJECT</div>
+          <p className="mt-3 text-sm sm:text-xl">
             안녕하세요 프론트엔드 개발자로 첫걸음 디딘 서지원 입니다 :)
           </p>
         </div>
@@ -121,10 +121,9 @@ function Project() {
           onReachBeginning={() => setPrevDisabled(true)}
           onReachEnd={() => setNextDisabled(true)}
           modules={[Navigation]}
-
           // breakpoints={{
           //   768: {
-          //     slidesPerView: 7,
+          //     slidesPerView: 4,
           //   },
           // }}
         >
@@ -139,7 +138,7 @@ function Project() {
                 }}
               >
                 <img
-                  className="h-[300px] bg-cover w-full"
+                  className=" bg-cover object-scale-down sm:object-fill sm:h-[300px] sm:w-full"
                   src={process.env.PUBLIC_URL + data.img}
                 />
               </SwiperSlide>
