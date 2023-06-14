@@ -13,7 +13,7 @@ function Nav() {
           onClick={() => navigate("/")}
           className="sm:w-7 sm:h-7 w-20 h-20 hover:text-gray-500 cursor-pointer"
           icon="carbon:home"
-          //   fontSize={30}
+          fontSize={30}
         />
       )}
       <Icon

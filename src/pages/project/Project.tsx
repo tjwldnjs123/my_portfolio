@@ -61,7 +61,7 @@ function Project() {
 
   const onScroll = (e: any) => {
     let screenY = e.currentTarget.scrollTop;
-    console.log(screenY);
+
     if (screenY > 150) {
       setScroll(false);
     } else {
@@ -146,16 +146,17 @@ function Project() {
           })}
         </Swiper>
         <button
-          className="h-20 hover:underline"
+          className="h-20 hover:underline z-50"
           onClick={() =>
             window.open("https://tjwldnjs123.github.io/portfolio", "_blank")
           }
         >
           시연영상이 궁금하다면? click me :)
           <br />
-          (Project 클릭!)
+          Project click!
         </button>
       </div>
+
       <DetailProject open={open} onClose={onClose} project={detailProject} />
     </div>
   );
