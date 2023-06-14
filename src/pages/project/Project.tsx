@@ -153,6 +153,8 @@ function Project() {
           }
         >
           시연영상이 궁금하다면? click me :)
+          <br />
+          (Project 클릭!)
         </button>
       </div>
       <DetailProject open={open} onClose={onClose} project={detailProject} />
