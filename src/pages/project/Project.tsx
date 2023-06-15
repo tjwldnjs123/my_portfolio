@@ -19,6 +19,7 @@ import { Icon } from "@iconify/react";
 import DetailProject from "../../components/project/DetailProject";
 import projectData from "../../data/data.json";
 import { Box } from "@mui/material";
+import MainLayout from "../../components/layout/MainLayout";
 
 function Project() {
   const swiperRef = useRef<any>();
@@ -70,19 +71,10 @@ function Project() {
   };
 
   return (
-    <div
-      id="main_slideY"
-      className="animate-intro h-screen overflow-scroll scrollbar-hide "
+    <MainLayout
+      title="WORK & PROJECT"
+      subTitle="안녕하세요 프론트엔드 개발자로 첫걸음 디딘 서지원 입니다 :)"
     >
-      <div className="flex flex-col items-center  h-[100vh] sticky top-0 ">
-        <div className="flexColCenter project_font w-full   bg-yellow-200 h-[70%]">
-          <div className="text-4xl sm:text-6xl">WORK & PROJECT</div>
-          <p className="mt-3 text-sm sm:text-xl">
-            안녕하세요 프론트엔드 개발자로 첫걸음 디딘 서지원 입니다 :)
-          </p>
-        </div>
-        {scroll && <Scroll />}
-      </div>
       <div className="w-full z-30 flexColCenter">
         <div className="flex flex-row justify-end w-[90%] mb-2 z-10 ">
           <button
@@ -158,7 +150,7 @@ function Project() {
       </div>
 
       <DetailProject open={open} onClose={onClose} project={detailProject} />
-    </div>
+    </MainLayout>
   );
 }
 
