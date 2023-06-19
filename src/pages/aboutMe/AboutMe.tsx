@@ -32,40 +32,27 @@ function AboutMe() {
   }, [firstScroll, secondScroll]);
 
   return (
-    <MainLayout isScroll={true} title="About Me" subTitle="hiii">
-      <div id="main_slideY" className="px-10 ">
+    <MainLayout isScroll={true} title="About Me">
+      <div id="main_slideY" className="px-10 h-[100vh] ">
         <p></p>
-        <div className={`${firstScroll && "fade-in flexRowCenter p-10"} `}>
+        <div
+          className={`${firstScroll && "fade-in flexRowCenter p-10 h-[60%] "} `}
+        >
           <img
-            className="w-[10%] h-[50%]"
+            className="w-[10%] h-[50%] pr-2"
             src={process.env.PUBLIC_URL + "/assets/job.png"}
           />
-          <div className="flexColCenter">
-            <p>"안녕하십니까 어서오십시오."</p>
-            <p>"어떤 업무 보러 오셨을까요~?"</p>
-            <p>저는 경영학과를 나와 금융권에 근무하면서</p>
-            <p>
-              사람들과 자주 소통하며 고객의 예금을 책임졌던{" "}
-              <strong>은행원</strong> 입니다.
-            </p>
-          </div>
+          <img
+            className="w-[10%] h-[50%] pr-2"
+            src={process.env.PUBLIC_URL + "/assets/cake.jpeg"}
+          />
         </div>
 
         <div
-          className={`${secondScroll && "fade-in-second flexRowCenter p-10"} `}
+          className={`${secondScroll && "fade-in-second flexRowCenter p-10 "} `}
         >
-          <img
-            className="w-[10%] h-[50%]"
-            src={process.env.PUBLIC_URL + "/assets/job.png"}
-          />
-          <div className="flexColCenter">
-            <p>"안녕하십니까 어서오십시오."</p>
-            <p>"어떤 업무 보러 오셨을까요~?"</p>
-            <p>저는 경영학과를 나와 금융권에 근무하면서</p>
-            <p>
-              사람들과 자주 소통하며 고객의 예금을 책임졌던{" "}
-              <strong>은행원</strong> 입니다.
-            </p>
+          <div className="border-2 w-[60%] h-[200px] border-yellow-200">
+            drag & drop!!
           </div>
         </div>
       </div>
@@ -74,9 +61,3 @@ function AboutMe() {
 }
 
 export default AboutMe;
-{
-  /* <img
-            className="w-[200px] h-[200px] rounded-full bg-cover"
-            src={process.env.PUBLIC_URL + "/assets/cake.jpeg"}
-          /> */
-}

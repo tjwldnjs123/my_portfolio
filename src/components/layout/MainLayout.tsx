@@ -4,7 +4,7 @@ import Scroll from "./Scroll";
 type Props = {
   children: React.ReactChild[] | React.ReactChild;
   title: string;
-  subTitle: string;
+  subTitle?: string;
   isScroll?: boolean;
 };
 

@@ -106,18 +106,18 @@ function Project() {
         </div>
         <Swiper
           className="mySwiper relative w-[90%] mb-10"
-          slidesPerView={3}
+          slidesPerView={2}
           spaceBetween={30}
           onBeforeInit={(swiper) => (swiperRef.current = swiper)}
           onSlideChange={() => setInit(false)}
           onReachBeginning={() => setPrevDisabled(true)}
           onReachEnd={() => setNextDisabled(true)}
           modules={[Navigation]}
-          // breakpoints={{
-          //   768: {
-          //     slidesPerView: 4,
-          //   },
-          // }}
+          breakpoints={{
+            375: {
+              slidesPerView: 3,
+            },
+          }}
         >
           {projectData.projects.map((data) => {
             return (
@@ -130,7 +130,7 @@ function Project() {
                 }}
               >
                 <img
-                  className=" bg-cover object-scale-down sm:object-fill sm:h-[300px] sm:w-full"
+                  className=" bg-cover object-fill w-[250px] h-[150px] sm:object-fill sm:h-[300px] sm:w-full"
                   src={process.env.PUBLIC_URL + data.img}
                 />
               </SwiperSlide>
