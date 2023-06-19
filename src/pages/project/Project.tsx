@@ -131,16 +131,18 @@ function Project() {
             return (
               <SwiperSlide
                 key={data.name}
-                className="cursor-pointer h-[300px]"
+                className="cursor-pointer h-[300px] "
                 onClick={() => {
                   setDetailProject(data);
                   setOpen(true);
                 }}
               >
-                <img
-                  className=" bg-cover object-scale-down sm:object-fill sm:h-[300px] sm:w-full"
-                  src={process.env.PUBLIC_URL + data.img}
-                />
+                <div>
+                  <img
+                    className="bg-cover object-fill w-[200px] h-[150px] sm:h-[300px] sm:w-full"
+                    src={process.env.PUBLIC_URL + data.img}
+                  />
+                </div>
               </SwiperSlide>
             );
           })}
