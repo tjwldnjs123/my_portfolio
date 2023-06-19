@@ -75,7 +75,7 @@ function Project() {
       title="WORK & PROJECT"
       subTitle="안녕하세요 프론트엔드 개발자로 첫걸음 디딘 서지원 입니다 :)"
     >
-      <div className="w-full z-30 flexColCenter">
+      <div className="snap-always  w-full z-30 flexColCenter">
         <div className="flex flex-row justify-end w-[90%] mb-2 z-10 ">
           <button
             onClick={() => {
