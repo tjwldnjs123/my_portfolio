@@ -9,8 +9,7 @@ function AboutMe() {
   function onScroll(e: any) {
     let screenY = e.currentTarget.scrollTop;
     const windowH = e.currentTarget.scrollHeight;
-    // console.log(screenY);
-    // console.log(windowH * 0.1);
+
     if (screenY > windowH / 2 + windowH * 0.1) {
       setScroll(false);
     } else {
@@ -42,7 +41,7 @@ function AboutMe() {
         </div>
       </div>
 
-      <div className="md:p-10 h-[100vh] w-full snap-always snap-center  ">
+      <div className="lg:p-10 h-[100vh] w-full snap-always snap-center  ">
         <div className="flex flex-col justify-start items-center w-full p-5 lg:p-10 bg-yellow-300 h-full ">
           <div>
             <div className="flexColCenter">
@@ -58,7 +57,7 @@ function AboutMe() {
             </div>
           </div>
           <div className="flex flex-col justify-center items-around pt-5 lg:pt-10 lg:flex lg:flex-row">
-            <div className="flexColCenter lg:mr-2 bg-yellow-100 rounded-full text-sm lg:text-lg mb-4 w-[350px] h-[200px] md:w-[420px] md:h-[250px] md:mb-2 lg:w-[500px] lg:h-[320px]   ">
+            <div className="flexColCenter lg:mr-2 bg-yellow-100 rounded-full text-sm lg:text-md xl:text-lg mb-4 w-[350px] h-[200px]  md:w-[420px] md:h-[250px] md:mb-2 lg:w-[450px] lg:h-[250px] xl:w-[500px] xl:h-[300px]  ">
               <p>"안녕하십니까 어서오십시오."</p>
               <p>"어떤 업무 도와드릴까요~?"</p>
               <p>저는 경영학과를 나와 금융권에 근무하면서</p>
@@ -77,7 +76,7 @@ function AboutMe() {
               </div>
             </div>
 
-            <div className="flexColCenter   bg-yellow-100 rounded-full text-sm lg:text-lg w-[350px] h-[200px]  md:w-[420px] md:h-[250px] lg:w-[500px] lg:h-[320px]">
+            <div className="flexColCenter   bg-yellow-100 rounded-full text-sm lg:text-md xl:text-lg w-[350px] h-[200px]  md:w-[420px] md:h-[250px] lg:w-[450px] lg:h-[250px] xl:w-[500px] xl:h-[300px]">
               <p>다양한 사람들과 소통하며 </p>
               <p>꾸준히 새로운것을 탐구하고 </p>
               <p>클라이언트입장에서 다시 한번 생각하며 개발하는 </p>
