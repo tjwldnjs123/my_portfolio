@@ -5,6 +5,7 @@ import Intro from "./pages/intro/Intro";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import Project from "./pages/project/Project";
 import Nav from "./components/nav/Nav";
+import AboutMe from "./pages/aboutMe/AboutMe";
 
 function App() {
   return (
@@ -12,7 +13,8 @@ function App() {
       <Nav />
       <Routes>
         <Route path="/" element={<Intro />} />
-        <Route path="/main" element={<Project />} />
+        <Route path="about-me" element={<AboutMe />} />
+        {/* <Route path="/main" element={<Project />} /> */}
       </Routes>
     </BrowserRouter>
   );

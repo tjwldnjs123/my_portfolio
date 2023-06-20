@@ -19,6 +19,7 @@ import { Icon } from "@iconify/react";
 import DetailProject from "../../components/project/DetailProject";
 import projectData from "../../data/data.json";
 import { Box } from "@mui/material";
+import MainLayout from "../../components/layout/MainLayout";
 
 function Project() {
   const swiperRef = useRef<any>();
@@ -47,44 +48,21 @@ function Project() {
     setOpen(false);
   };
 
-  useEffect(() => {
-    window.onbeforeunload = function pushRefresh() {
-      window.scrollTo(0, 0);
-    };
-  }, []);
-
-  useEffect(() => {
-    document
-      .getElementById("main_slideY")
-      ?.addEventListener("scroll", onScroll);
-  }, [scroll]);
-
-  const onScroll = (e: any) => {
-    let screenY = e.currentTarget.scrollTop;
-
-    if (screenY > 150) {
-      setScroll(false);
-    } else {
-      setScroll(true);
-    }
-  };
-
   return (
-    <div
-      id="main_slideY"
-      className="animate-intro h-screen overflow-scroll scrollbar-hide "
-    >
-      <div className="flex flex-col items-center  h-[100vh] sticky top-0 ">
-        <div className="flexColCenter project_font w-full   bg-yellow-200 h-[70%]">
-          <div className="text-4xl sm:text-6xl">WORK & PROJECT</div>
-          <p className="mt-3 text-sm sm:text-xl">
-            안녕하세요 프론트엔드 개발자로 첫걸음 디딘 서지원 입니다 :)
-          </p>
+    <div id="main_slideY" className="">
+      <div className="snap-always snap-center sticky top-0  h-[100vh]  w-full animate-intro  overflow-scroll scrollbar-hide scroll-smooth ">
+        <div className="flex flex-col items-center h-[100vh] ">
+          <div className="flexColCenter project_font w-full  bg-yellow-200 h-[70%] ">
+            <div className="text-4xl sm:text-6xl">WORK & PROJECT</div>
+            <p className="mt-3 text-sm sm:text-xl">
+              안녕하세요 프론트엔드 개발자로 첫걸음 디딘 서지원 입니다 :)
+            </p>
+          </div>
         </div>
-        {scroll && <Scroll />}
       </div>
-      <div className="w-full z-30 flexColCenter">
-        <div className="flex flex-row justify-end w-[90%] mb-2 z-10 ">
+
+      <div className="snap-always snap-center  w-full z-30 flexColCenter">
+        <div className="flex flex-row w-[90%] justify-end mb-2 z-10 ">
           <button
             onClick={() => {
               swiperRef.current?.slidePrev();
@@ -114,34 +92,42 @@ function Project() {
         </div>
         <Swiper
           className="mySwiper relative w-[90%] mb-10"
-          slidesPerView={3}
+          slidesPerView={2}
           spaceBetween={30}
           onBeforeInit={(swiper) => (swiperRef.current = swiper)}
           onSlideChange={() => setInit(false)}
           onReachBeginning={() => setPrevDisabled(true)}
           onReachEnd={() => setNextDisabled(true)}
           modules={[Navigation]}
-          // breakpoints={{
-          //   768: {
-          //     slidesPerView: 4,
-          //   },
-          // }}
+          breakpoints={{
+            375: {
+              slidesPerView: 3,
+            },
+          }}
         >
           {projectData.projects.map((data) => {
             return (
               <SwiperSlide
                 key={data.name}
-                className="cursor-pointer h-[300px] "
+                className="cursor-pointer h-[300px]"
                 onClick={() => {
                   setDetailProject(data);
                   setOpen(true);
                 }}
               >
-                <div>
+                <div className="relative group">
                   <img
-                    className="bg-cover object-fill w-[200px] h-[150px] sm:h-[300px] sm:w-full"
+                    className=" bg-cover object-fill w-[250px] h-[150px] sm:object-fill sm:h-[300px] sm:w-full brightness-100 group-hover:brightness-50"
                     src={process.env.PUBLIC_URL + data.img}
                   />
+                  <div className="swiperHover  md:flex md:flex-col md:justify-center md:items-center invisible group-hover:visible">
+                    <p className="invisible md:group-hover:visible text-xl md:text-3xl lg:text-4xl text-slate-50 pb-2">
+                      {data.name}
+                    </p>
+                    <p className="invisible md:group-hover:visible md:text-sm text-center text-slate-50 ">
+                      {data.contnet}
+                    </p>
+                  </div>
                 </div>
               </SwiperSlide>
             );
@@ -154,8 +140,6 @@ function Project() {
           }
         >
           시연영상이 궁금하다면? click me :)
-          <br />
-          Project click!
         </button>
       </div>
 

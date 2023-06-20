@@ -32,7 +32,7 @@ function SecondIntroduce({ secondFadeIn }: Props) {
             </p>
             <div
               className="absolute bottom-[-100px] right-[-20px] cursor-pointer animate-bounce"
-              onClick={() => navigate("/main")}
+              onClick={() => navigate("/about-me")}
             >
               <Icon
                 fontSize={40}
