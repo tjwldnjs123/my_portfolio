@@ -43,12 +43,7 @@ function AboutMe() {
       </div>
 
       <div className="md:p-10 h-[100vh] w-full snap-always snap-center  ">
-        <div
-          className={`${
-            // firstScroll &&
-            "fade-in  flex flex-col justify-start items-center p-5 lg:p-10 bg-yellow-300 h-full "
-          } `}
-        >
+        <div className="flex flex-col justify-start items-center w-full p-5 lg:p-10 bg-yellow-300 h-full ">
           <div>
             <div className="flexColCenter">
               <img

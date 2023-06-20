@@ -139,7 +139,14 @@ function Project() {
             window.open("https://tjwldnjs123.github.io/portfolio", "_blank")
           }
         >
-          시연영상이 궁금하다면? click me :)
+          <p className="mb-2">시연영상이 궁금하다면?</p>
+          <div className="flexRowCenter cursor-pointer animate-bounce">
+            <Icon
+              fontSize={30}
+              icon="icon-park-outline:winking-face-with-open-eyes"
+            />
+            <span>click me!</span>
+          </div>
         </button>
       </div>
 
