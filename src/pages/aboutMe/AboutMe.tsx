@@ -71,13 +71,14 @@ function AboutMe() {
                 사람들과 자주 소통하며 고객의 예금을 책임졌던{" "}
                 <strong>은행원</strong>입니다.
               </p>
-              <div className="flexRowCenter">
-                <p className=" border border-gray-400 rounded-full">+친절함</p>
-                <p className=" border border-gray-400 rounded-full">
-                  +소통능력
+              <div className="grid grid-cols-3 gap-4 mt-5">
+                <p className="shadow-lg rounded-full text-center">+친절함</p>
+                <p className="shadow-lg rounded-full text-center">+소통능력</p>
+                <p className="shadow-lg rounded-full text-center">+책임감</p>
+                <p className="col-start-1 col-end-2 shadow-lg rounded-full text-center">
+                  +성실함
                 </p>
-                <p className=" border border-gray-400 rounded-full">+책임감</p>
-                <p className=" border border-gray-400 rounded-full">+성실함</p>
+                <p>...</p>
               </div>
             </div>
 
@@ -89,13 +90,16 @@ function AboutMe() {
                 {" "}
                 <strong>프론트엔드 개발자</strong>입니다.
               </p>
-              <div className="flexRowCenter">
-                <p className=" border border-gray-400 rounded-full">+HTML</p>
-                <p className=" border border-gray-400 rounded-full">+CSS</p>
-                <p className=" border border-gray-400 rounded-full">
+              <div className="grid grid-cols-3 gap-4  mt-5">
+                <p className="shadow-lg rounded-full text-center">+HTML</p>
+                <p className="shadow-lg rounded-full text-center">+CSS</p>
+                <p className="shadow-lg rounded-full text-center">
                   +Javascript
                 </p>
-                <p className=" border border-gray-400 rounded-full">+React</p>
+                <p className="shadow-lg rounded-full text-center">+React</p>
+                <p className="shadow-lg rounded-full text-center">+Redux</p>
+                <p className="shadow-lg rounded-full text-center">+Recoil</p>
+                <p className="col-start-1 col-end-4 text-center">...</p>
               </div>
             </div>
           </div>
