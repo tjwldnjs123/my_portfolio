@@ -11,18 +11,19 @@ function Intro() {
 
   function onScroll(e: any) {
     let screenY = e.currentTarget.scrollTop;
+    const windowH = e.currentTarget.scrollHeight;
 
-    if (screenY > 700) {
+    if (screenY > windowH / 4) {
       setFadeIn(true);
     } else {
       setFadeIn(false);
     }
-    if (screenY > 1260) {
+    if (screenY > windowH / 2) {
       setScroll(false);
     } else {
       setScroll(true);
     }
-    if (screenY > 1400) {
+    if (screenY > windowH / 3) {
       setSecondFadeIn(true);
     } else {
       setSecondFadeIn(false);
