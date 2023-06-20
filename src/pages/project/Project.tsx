@@ -115,10 +115,20 @@ function Project() {
                   setOpen(true);
                 }}
               >
-                <img
-                  className=" bg-cover object-fill w-[250px] h-[150px] sm:object-fill sm:h-[300px] sm:w-full"
-                  src={process.env.PUBLIC_URL + data.img}
-                />
+                <div className="relative group">
+                  <img
+                    className=" bg-cover object-fill w-[250px] h-[150px] sm:object-fill sm:h-[300px] sm:w-full brightness-100 group-hover:brightness-50"
+                    src={process.env.PUBLIC_URL + data.img}
+                  />
+                  <div className="swiperHover  md:flex md:flex-col md:justify-center md:items-center invisible group-hover:visible">
+                    <p className="invisible md:group-hover:visible text-xl md:text-3xl lg:text-4xl text-slate-50 pb-2">
+                      {data.name}
+                    </p>
+                    <p className="invisible md:group-hover:visible md:text-sm text-center text-slate-50 ">
+                      {data.contnet}
+                    </p>
+                  </div>
+                </div>
               </SwiperSlide>
             );
           })}

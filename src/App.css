@@ -70,6 +70,13 @@
   opacity: 0.9;
 }
 
+.swiperHover {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
 /* .swiper-slide {
   height: 300px;
 } */
