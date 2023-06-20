@@ -48,35 +48,21 @@ function Project() {
     setOpen(false);
   };
 
-  useEffect(() => {
-    window.onbeforeunload = function pushRefresh() {
-      window.scrollTo(0, 0);
-    };
-  }, []);
-
-  useEffect(() => {
-    document
-      .getElementById("main_slideY")
-      ?.addEventListener("scroll", onScroll);
-  }, [scroll]);
-
-  const onScroll = (e: any) => {
-    let screenY = e.currentTarget.scrollTop;
-
-    if (screenY > 150) {
-      setScroll(false);
-    } else {
-      setScroll(true);
-    }
-  };
-
   return (
-    <MainLayout
-      title="WORK & PROJECT"
-      subTitle="안녕하세요 프론트엔드 개발자로 첫걸음 디딘 서지원 입니다 :)"
-    >
-      <div className="snap-always  w-full z-30 flexColCenter">
-        <div className="flex flex-row justify-end w-[90%] mb-2 z-10 ">
+    <div id="main_slideY" className="">
+      <div className="snap-always snap-center sticky top-0  h-[100vh]  w-full animate-intro  overflow-scroll scrollbar-hide scroll-smooth ">
+        <div className="flex flex-col items-center h-[100vh] ">
+          <div className="flexColCenter project_font w-full  bg-yellow-200 h-[70%] ">
+            <div className="text-4xl sm:text-6xl">WORK & PROJECT</div>
+            <p className="mt-3 text-sm sm:text-xl">
+              안녕하세요 프론트엔드 개발자로 첫걸음 디딘 서지원 입니다 :)
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div className="snap-always snap-center  w-full z-30 flexColCenter">
+        <div className="flex flex-row w-[90%] justify-end mb-2 z-10 ">
           <button
             onClick={() => {
               swiperRef.current?.slidePrev();
@@ -144,13 +130,11 @@ function Project() {
           }
         >
           시연영상이 궁금하다면? click me :)
-          <br />
-          Project click!
         </button>
       </div>
 
       <DetailProject open={open} onClose={onClose} project={detailProject} />
-    </MainLayout>
+    </div>
   );
 }
 

@@ -17,33 +17,13 @@ function MainLayout({ children, title, subTitle, isScroll }: Props) {
     };
   }, []);
 
-  useEffect(() => {
-    document
-      .getElementById("main_slideY")
-      ?.addEventListener("scroll", onScroll);
-  }, [scroll]);
-
-  const onScroll = (e: any) => {
-    let screenY = e.currentTarget.scrollTop;
-    if (!isScroll) {
-      if (screenY > 150) {
-        setScroll(false);
-      } else {
-        setScroll(true);
-      }
-    }
-  };
   return (
-    <div
-      id="main_slideY"
-      className="snap-y snap-mandatory animate-intro h-screen overflow-scroll scrollbar-hide scroll-smooth "
-    >
+    <div className="animate-intro h-screen overflow-scroll scrollbar-hide scroll-smooth ">
       <div className="flex flex-col items-center  h-[100vh]">
         <div className="flexColCenter project_font w-full bg-yellow-200 h-[70%] pt-[7%] sticky top-0">
           <div className="text-4xl sm:text-6xl">{title}</div>
           <p className="mt-3 text-sm sm:text-xl">{subTitle}</p>
         </div>
-        {scroll && <Scroll />}
       </div>
       {children}
     </div>
