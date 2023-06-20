@@ -63,7 +63,7 @@ function AboutMe() {
             </div>
           </div>
           <div className="flex flex-col justify-center items-around pt-5 lg:pt-10 lg:flex lg:flex-row">
-            <div className="flexColCenter lg:mr-2 bg-yellow-100 rounded-full text-sm mb-4 w-[350px] h-[200px] md:w-[420px] md:h-[250px] md:mb-2 lg:w-[500px] lg:h-[320px]   ">
+            <div className="flexColCenter lg:mr-2 bg-yellow-100 rounded-full text-sm lg:text-lg mb-4 w-[350px] h-[200px] md:w-[420px] md:h-[250px] md:mb-2 lg:w-[500px] lg:h-[320px]   ">
               <p>"안녕하십니까 어서오십시오."</p>
               <p>"어떤 업무 도와드릴까요~?"</p>
               <p>저는 경영학과를 나와 금융권에 근무하면서</p>
@@ -82,7 +82,7 @@ function AboutMe() {
               </div>
             </div>
 
-            <div className="flexColCenter   bg-yellow-100 rounded-full text-sm w-[350px] h-[200px]  md:w-[420px] md:h-[250px] lg:w-[500px] lg:h-[320px]">
+            <div className="flexColCenter   bg-yellow-100 rounded-full text-sm lg:text-lg w-[350px] h-[200px]  md:w-[420px] md:h-[250px] lg:w-[500px] lg:h-[320px]">
               <p>다양한 사람들과 소통하며 </p>
               <p>꾸준히 새로운것을 탐구하고 </p>
               <p>클라이언트입장에서 다시 한번 생각하며 개발하는 </p>
