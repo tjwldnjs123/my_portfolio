@@ -23,7 +23,7 @@ function SecondIntroduce({ secondFadeIn }: Props) {
             <p
               className={`${
                 secondFadeIn &&
-                "fade-in intro_more_font text-2xl mt-6 sm:text-7xl "
+                "fade-in intro_more_font text-2xl mt-6 sm:text-6xl "
               }`}
             >
               Do you <br />
