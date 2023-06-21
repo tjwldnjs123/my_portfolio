@@ -9,7 +9,7 @@ function Nav() {
   return (
     <div className="z-20 fixed sm:top-4 sm:right-4 top-6 right-8 w-[10%] flex flex-row justify-around">
       {currentUrl.pathname.includes("about") && (
-        <div className="text-3xl sm:text-2xl">
+        <div className="text-3xl sm:text-2xl md:text-3xl xl:text-4xl">
           <Icon
             onClick={() => navigate("/")}
             className=" hover:text-gray-500 cursor-pointer"
@@ -17,7 +17,7 @@ function Nav() {
           />
         </div>
       )}
-      <div className="text-3xl sm:text-2xl">
+      <div className="text-3xl sm:text-2xl md:text-3xl xl:text-4xl">
         <Icon
           onClick={() =>
             window.open("https://github.com/tjwldnjs123", "_blank")
@@ -26,7 +26,7 @@ function Nav() {
           icon="mdi:github"
         />
       </div>
-      <div className="text-3xl sm:text-2xl">
+      <div className="text-3xl sm:text-2xl md:text-3xl xl:text-4xl">
         <Icon
           onClick={() =>
             window.open("https://velog.io/@tjwldnjs4457", "_blank")

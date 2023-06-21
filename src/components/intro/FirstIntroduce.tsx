@@ -9,7 +9,9 @@ function FirstIntroduce({ fadeIn }: Props) {
       <div className=" w-[100%]">
         <div
           className={`${
-            fadeIn ? "fade-in text-xl flexColCenter sm:text-2xl" : "hidden"
+            fadeIn
+              ? "fade-in text-xl flexColCenter sm:text-2xl 2xl:text-4xl"
+              : "hidden"
           } `}
         >
           <span>
