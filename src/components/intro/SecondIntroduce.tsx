@@ -15,7 +15,7 @@ function SecondIntroduce({ secondFadeIn }: Props) {
           <img
             className={`${
               secondFadeIn &&
-              "fade-in w-[60%] h-[35%] rounded-full sm:pr-8 sm:rounded-full sm:w-[40%] sm:h-[80%] "
+              "fade-in w-[50%] h-[30%] rounded-full sm:pr-8 sm:rounded-full sm:w-[45%] sm:h-[40%] md:w-[50%] md:h-[50%]  2xl:w-[35%] 2xl:h-[55%] "
             }`}
             src={process.env.PUBLIC_URL + "/assets/me.jpeg"}
           />
@@ -23,7 +23,7 @@ function SecondIntroduce({ secondFadeIn }: Props) {
             <p
               className={`${
                 secondFadeIn &&
-                "fade-in intro_more_font text-2xl mt-6 sm:text-7xl "
+                "fade-in intro_more_font text-2xl mt-6 sm:text-7xl 2xl:text-8xl"
               }`}
             >
               Do you <br />
@@ -31,7 +31,7 @@ function SecondIntroduce({ secondFadeIn }: Props) {
               <br /> see more?
             </p>
             <div
-              className="absolute bottom-[-100px] right-[-20px] cursor-pointer animate-bounce"
+              className="absolute bottom-[-100px] right-[-20px] 2xl:text-3xl cursor-pointer animate-bounce"
               onClick={() => navigate("/about-me")}
             >
               <Icon
