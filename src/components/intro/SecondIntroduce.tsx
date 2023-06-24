@@ -9,13 +9,13 @@ type Props = {
 function SecondIntroduce({ secondFadeIn }: Props) {
   const navigate = useNavigate();
   return (
-    <div className="snap-always snap-center h-[100vh] flex flex-col justify-center items-center sm:flex sm:flex-row sm:justify-center sm:items-center">
+    <div className="snap-always snap-center h-[100vh] flex flex-col justify-center items-center md:flex md:flex-row md:justify-center md:items-center">
       {secondFadeIn && (
         <>
           <img
             className={`${
               secondFadeIn &&
-              "fade-in w-[50%] h-[30%] rounded-full sm:pr-8 sm:rounded-full sm:w-[45%] sm:h-[40%] md:w-[37%] md:h-[60%]  2xl:w-[30%] 2xl:h-[40%] "
+              "fade-in w-[50%] h-[60%] rounded-full object-cover sm:pr-8 sm:rounded-full  md:w-[50%] md:h-[70%] lg:w-[40%] lg:h-[75%]  2xl:w-[30%] 2xl:h-[55%] "
             }`}
             src={process.env.PUBLIC_URL + "/assets/me.jpeg"}
           />
@@ -23,7 +23,7 @@ function SecondIntroduce({ secondFadeIn }: Props) {
             <p
               className={`${
                 secondFadeIn &&
-                "fade-in intro_more_font text-2xl mt-6 sm:text-6xl "
+                "fade-in intro_more_font text-2xl mt-6 md:text-6xl "
               }`}
             >
               Do you <br />
