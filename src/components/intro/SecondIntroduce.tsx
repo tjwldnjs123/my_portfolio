@@ -15,7 +15,8 @@ function SecondIntroduce({ secondFadeIn }: Props) {
           <img
             className={`${
               secondFadeIn &&
-              "fade-in w-[50%] h-[60%] rounded-full object-cover sm:pr-8 sm:rounded-full  md:w-[50%] md:h-[70%] lg:w-[40%] lg:h-[75%]  2xl:w-[30%] 2xl:h-[55%] "
+              // "fade-in w-[50%] h-[60%] rounded-full object-cover sm:pr-8 sm:rounded-full  md:w-[50%] md:h-[70%] lg:w-[40%] lg:h-[75%]  2xl:w-[30%] 2xl:h-[55%] "
+              "fade-in w-[50%] h-[30%] rounded-full object-cover sm:pr-8 sm:rounded-full sm:w-[45%] sm:h-[40%] md:w-[37%] md:h-[60%]  2xl:w-[30%] 2xl:h-[40%] "
             }`}
             src={process.env.PUBLIC_URL + "/assets/me.jpeg"}
           />
