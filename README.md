@@ -19,7 +19,7 @@
 - ✅ 첫번째 페이지
 
   - Intro 
-   - ![ezgif com-video-to-gif](https://github.com/tjwldnjs123/my_portfolio/assets/100896832/81492e07-ad72-4ba7-b9fa-7e258166ff4b)<br>
+     ![ezgif com-video-to-gif](https://github.com/tjwldnjs123/my_portfolio/assets/100896832/81492e07-ad72-4ba7-b9fa-7e258166ff4b)<br>
 
     - keyframes로 페이지 및 글자 fade in 효과 구현
     - tailwind bounce 사용하여 click me 구현
@@ -31,7 +31,7 @@
 - ✅ 두번째 페이지
 
   - Project
-   - ![ezgif com-video-to-gif](https://github.com/tjwldnjs123/my_portfolio/assets/100896832/0c299a42-41ad-499c-b6e8-640c8c07bc84)<br>
+     ![ezgif com-video-to-gif](https://github.com/tjwldnjs123/my_portfolio/assets/100896832/0c299a42-41ad-499c-b6e8-640c8c07bc84)<br>
      ![ezgif com-video-to-gif](https://github.com/tjwldnjs123/my_portfolio/assets/100896832/4267089a-7b36-4f0d-b16e-7e0f5b023331)<br>
     - navigate 경로 이동
     - scroll 감지 구현
