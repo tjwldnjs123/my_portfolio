@@ -32,7 +32,7 @@
 
   - Project
    - ![ezgif com-video-to-gif](https://github.com/tjwldnjs123/my_portfolio/assets/100896832/0c299a42-41ad-499c-b6e8-640c8c07bc84)<br>
-     
+     ![ezgif com-video-to-gif](https://github.com/tjwldnjs123/my_portfolio/assets/100896832/4267089a-7b36-4f0d-b16e-7e0f5b023331)<br>
     - navigate 경로 이동
     - scroll 감지 구현
     - swiper 사용하여 이미지 슬라이드 구현
