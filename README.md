@@ -19,7 +19,12 @@
 - ✅ 첫번째 페이지
 
   - Intro <br >
-    ![ezgif com-video-to-gif](https://github.com/tjwldnjs123/my_portfolio/assets/100896832/81492e07-ad72-4ba7-b9fa-7e258166ff4b)
+    ![ezgif com-video-to-gif](https://github.com/tjwldnjs123/my_portfolio/assets/100896832/81492e07-ad72-4ba7-b9fa-7e258166ff4b)<br>
+
+    - keyframes로 페이지 및 글자 fade in 효과 구현
+    - tailwind bounce 사용하여 click me 구현
+    - scroll 감지 구현
+    
       
   
       
