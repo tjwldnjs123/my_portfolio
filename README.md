@@ -13,7 +13,7 @@
 
 ### 2-1. 적용 기술 
 
-Typescript, React.js, react-router-dom, tailwind css, material ui, swiper, iconify
+> Typescript, React.js, react-router-dom, tailwind css, material ui, swiper, iconify
 
 ### 2-2. 구현 기능
 - ✅ 첫번째 페이지
