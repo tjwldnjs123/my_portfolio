@@ -41,6 +41,6 @@
 
 - ✅ 반응형
 
-    ![ezgif com-video-to-gif (1)](https://github.com/tjwldnjs123/my_portfolio/assets/100896832/8d880859-54ee-4009-87ec-5d247bf83008)
+     ![ezgif com-video-to-gif (1)](https://github.com/tjwldnjs123/my_portfolio/assets/100896832/8d880859-54ee-4009-87ec-5d247bf83008)
  
 
