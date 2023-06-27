@@ -31,9 +31,13 @@
 - ✅ 두번째 페이지
 
   - Project
-   - ![ezgif com-video-to-gif](https://github.com/tjwldnjs123/my_portfolio/assets/100896832/0c299a42-41ad-499c-b6e8-640c8c07bc84)
+   - ![ezgif com-video-to-gif](https://github.com/tjwldnjs123/my_portfolio/assets/100896832/0c299a42-41ad-499c-b6e8-640c8c07bc84)<br>
      
-      
+    - navigate 경로 이동
+    - scroll 감지 구현
+    - swiper 사용하여 이미지 슬라이드 구현
+    - 해당 프로젝트 커서 이동시 hover효과 구현
+    - 프로젝트 클릭시 material ui 모달 구현 
 
  
 
