@@ -31,7 +31,7 @@
 - ✅ 두번째 페이지
 
   - Project
-    - ![ezgif com-video-to-gif](https://github.com/tjwldnjs123/my_portfolio/assets/100896832/0c299a42-41ad-499c-b6e8-640c8c07bc84)
+   - ![ezgif com-video-to-gif](https://github.com/tjwldnjs123/my_portfolio/assets/100896832/0c299a42-41ad-499c-b6e8-640c8c07bc84)
      
       
 
