@@ -39,5 +39,8 @@
     - 해당 프로젝트 커서 이동시 hover효과 구현
     - 프로젝트 클릭시 material ui 모달 구현 
 
+- ✅ 반응형
+
+    ![ezgif com-video-to-gif (1)](https://github.com/tjwldnjs123/my_portfolio/assets/100896832/8d880859-54ee-4009-87ec-5d247bf83008)
  
 
